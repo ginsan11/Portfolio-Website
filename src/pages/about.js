@@ -47,7 +47,7 @@ const about = () => {
                     <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
                         <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>About Me </h2>
                 <p className='font-medium'>
-                            Hi, I'm Hervé, a web developer With 9+ years of experience in technology-focused roles.
+                            Hi, I&apos;m Hervé, a web developer With 9+ years of experience in technology-focused roles.
                             My expertise encompasses a diverse range of technologies, 
                             including backend development with frameworks like node.js, efficient database management utilizing PostgresSQL/SQL 
                             and frontend design with HTML/CSS
@@ -58,7 +58,7 @@ const about = () => {
 
                         </p>
                         <p className='font-medium'>
-                            Whether I'm working on a website, or 
+                            Whether I&apos;m working on a website, or 
 other digital product, I bring my commitment to design excellence and user-centered thinking to 
 every project I work on. I look forward for the opportunity to be part of your team and bring passion and skills to your next project.
                         </p>
