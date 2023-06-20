@@ -5,7 +5,9 @@ import LiIcon from './LiIcon'
 
 const Details = ({position, company, companyLink, time, address, work}) => {
     const ref = useRef(null)
-    const splitWork = work.split('\n').map(str => <p className=' font-meidum w-full md:text-sm' >{str} </p> );
+    const splitWork = work.split('\n').map((str, index) => (
+        <p key={index} className='font-meidum w-full md:text-sm'>{str}</p>
+      ));
 
     return (
     <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]'>
