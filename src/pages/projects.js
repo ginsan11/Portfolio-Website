@@ -24,8 +24,8 @@ const FeaturedProject = ({type, title, summary, img, link, github, srcset}) => {
 
 
     return (
-        <article className='rounded-br-2xl w-full flex items-center justify-between rounded-3xl border border-solid
-         border-dark bg-light dark:border-light dark:bg-dark shadow-2x1 p-12 relative
+        <article className='rounded-br-2xl w-full flex items-center justify-between rounded-3xl border-8 border-solid border-dark
+        border-l-2 border-t-2 border-r-6 border-b-6 bg-light dark:border-light dark:bg-dark shadow-2x1 p-12 relative
          lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
             <div className='xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem] rounded-br-3xl absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light' />
             <button onClick={() => setTrigger(true)}
@@ -48,10 +48,10 @@ const FeaturedProject = ({type, title, summary, img, link, github, srcset}) => {
 
                 <p className='sm:text-sm my-2 font-medium text-dark dark:text-light'>{summary}</p>
                 <div className='mt-2 flex items-center'>
-                    <Link className='w-10' href={github} target=''><GithubIcon /> </Link>
-                    <Link
+                    <Link className='w-10' href={github} target='_blank'><GithubIcon /> </Link>
+                    {/*<Link
                         className='sm:px-4 sm:text-base ml-4 rounded-lg bg-dark text-light dark:bg-light dark:text-dark p-2 px-6 text-lg font-semibold'
-                        href={link} target='_blank'>Visit Project</Link>
+    href={link} target='_blank'>Visit Project</Link>*/}
 
                 </div>
 
@@ -113,25 +113,25 @@ const projects = () => {
 
 
     const set1 = [
-        { src: "https://i.imgur.com/gX3s31m.png"},
-        { src: "https://i.imgur.com/3If7lKo.png"},
-        { src: "https://i.imgur.com/qQxAATo.png"},
-        { src: "https://i.imgur.com/wFgdvwl.png"},
-        { src: "https://i.imgur.com/gkPHScF.png"}
+        { src: "https://i.imgur.com/gX3s31m.png", width: 2048, height: 1365 },
+        { src: "https://i.imgur.com/3If7lKo.png", width: 2048, height: 1365 },
+        { src: "https://i.imgur.com/qQxAATo.png", width: 2048, height: 1365 },
+        { src: "https://i.imgur.com/wFgdvwl.png", width: 2048, height: 1365 },
+        { src: "https://i.imgur.com/gkPHScF.png", width: 2048, height: 1365 }
     ]
 
     const set2 = [
-        { src: "https://i.imgur.com/Nm2dhpw.png"},
-        { src: "https://i.imgur.com/eaCDyhX.png"},
-        { src: "https://i.imgur.com/x4BtQNb.png"},
-        { src: "https://i.imgur.com/qkcYrS8.png"},
-        { src: "https://i.imgur.com/t2lEAuE.png"}
+        { src: "https://i.imgur.com/Nm2dhpw.png", width: 2048, height: 1365 },
+        { src: "https://i.imgur.com/eaCDyhX.png", width: 2048, height: 1365 },
+        { src: "https://i.imgur.com/x4BtQNb.png", width: 2048, height: 1365 },
+        { src: "https://i.imgur.com/qkcYrS8.png", width: 2048, height: 1365 },
+        { src: "https://i.imgur.com/t2lEAuE.png", width: 2048, height: 1365 }
     ]
 
     const set3 = [
-        { src: "https://i.imgur.com/q33JRuY.png"},
-        { src: "https://i.imgur.com/dWlOXop.png"},
-        { src: "https://i.imgur.com/Z5ELseR.png"}
+        { src: "https://i.imgur.com/q33JRuY.png", width: 2048, height: 1365 },
+        { src: "https://i.imgur.com/dWlOXop.png", width: 2048, height: 1365 },
+        { src: "https://i.imgur.com/Z5ELseR.png", width: 2048, height: 1365 }
     ]
 
     const set4 = [    {
@@ -145,9 +145,9 @@ const projects = () => {
           }
         ]
     },
-    { src: "https://i.imgur.com/q7wji2s.png"},
-    { src: "https://i.imgur.com/QfTd8EG.png"},
-    { src: "https://i.imgur.com/shaiByA.png"}
+    { src: "https://i.imgur.com/q7wji2s.png", width: 2048, height: 1365 },
+    { src: "https://i.imgur.com/QfTd8EG.png", width: 2048, height: 1365 },
+    { src: "https://i.imgur.com/shaiByA.png", width: 2048, height: 1365 }
 
     ]
     const set5 = [    {
@@ -177,7 +177,7 @@ const projects = () => {
     return (
         <>
             <Head>
-                <title>HerveM | Projects Page </title>
+                <title>HervéM | Projects Page </title>
                 <meta name='description' content='about us' />
             </Head>
             <main className='w-full mb-16 flex flex-col items-center justify-center'>
@@ -191,7 +191,7 @@ const projects = () => {
                             <FeaturedProject
                                 title={"Sask Long Covid (Node/React)"}
                                 summary="The Sask Long COVID project spearheaded by Professor/Shareholder Nathaniel Osgood, aimed to provide users access to a medical history of their Long Covid Symtpoms. 
-                                I developed a Postgres SQL backend for handling user login and medical data, implementing security measures against potential attacks like SQL injections. Leveraging TypeScript, the backend facilitated secure login, data formatting, password encryption, and a user registration system. The frontend was built using React and HTML  "
+                                I developed a Postgres SQL backend for handling user login and medical data, implementing security measures against potential attacks like SQL injections. Leveraging TypeScript, the backend facilitated secure login, data formatting, password encryption, and a user registration system. The frontend was built using React and HTML  **code unavailable for confidentiality reasons**"
                                 img={project1}
                                 github={"/"}
                                 link=""
@@ -205,7 +205,7 @@ const projects = () => {
                                 img={project2}
                                 github={"https://github.com/ginsan11/yxefoodbank"}
                                 summary="The YXE Food Bank project, is virtual Food Bank website crafted using Python (Django), JavaScript, HTML, and Bulma CSS. Featured a registration and login system, fortified with Django's Token Authentication system. Users can add items to their cart, place orders, and even access their order history. The website also includes a comprehensive admin management system. To facilitate seamless payment processing, Stripe integration was implemented using a dummy API key."
-                                link="/"
+                                link="https://github.com/ginsan11/yxefoodbank"
                                 srcset={set2}
                                 type={"Featured Project"} />
                         </div>
@@ -220,19 +220,19 @@ const projects = () => {
                                 type={"Featured Project"} />
                         </div>
                     </div>
-                    <h2 className='font-bold text-4xl w-fill text-center my-16 mt-32'>Other Digital Hobbies/Interests</h2>
+                    <h2 className='font-bold text-4xl w-fill text-center my-16 mt-32 dark:text-light'>Other Digital Hobbies/Interests</h2>
                     <ul>
                         <Article
                         title="Working on AI stable diffusion, and achieving consistent frame to frame rendering. I've also trained a model on myself using various methods."
                         date=''
-                        srcset={set3}
+                        srcset={set4}
                         link='/'
                         img={diff}
                         />
                         <Article
                         title='Self-taught blender video animation, and have completed a couple projects'
                         date=''
-                        srcset={set4}
+                        srcset={set5}
                         link='/'
                         img={blender}
                         />

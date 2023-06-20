@@ -63,10 +63,11 @@ other digital product, I bring my commitment to design excellence and user-cente
 every project I work on. I look forward for the opportunity to be part of your team and bring passion and skills to your next project.
                         </p>
                     </div>
-                    <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark
+                    <div className='col-span-3 relative h-max rounded-2xl border-8 border-solid border-dark
+        border-l-2 border-t-2 border-r-6 border-b-6
                         bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8'>
-                        <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light' />
-                        <Image src={profilePic} alt='Codebucks' className='w-full h-auto rounded-2' priority/>
+                        <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem]  bg-dark dark:bg-light' />
+                        <Image src={profilePic} alt='Codebucks' className='w-full h-auto rounded-2 ' priority/>
                     </div>
                         <div className='col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
                         <div className='flex flex-col items-end justify-center xl:items-center'>
