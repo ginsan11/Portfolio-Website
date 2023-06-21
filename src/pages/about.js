@@ -72,15 +72,7 @@ every project I work on. I look forward for the opportunity to be part of your t
                         <div className='col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
                         <div className='flex flex-col items-end justify-center xl:items-center'>
                             <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
-                                <AnimatedNumbers value={50} />+
-                            </span>
-                            <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75
-                            xl:text-center md:text-lg sm:text-base xs:text-sm'>Satsfied Clients</h2>
-                        </div>
-
-                        <div className='flex flex-col items-end justify-center xl:items-center'>
-                            <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
-                            <AnimatedNumbers value={9} />+
+                                <AnimatedNumbers value={9} />+
                             </span>
                             <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75
                             xl:text-center md:text-lg sm:text-base xs:text-sm'>Years in the tech industry</h2>
@@ -92,6 +84,14 @@ every project I work on. I look forward for the opportunity to be part of your t
                             </span>
                             <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75
                             xl:text-center md:text-lg sm:text-base xs:text-sm'>Years of coding experience</h2>
+                        </div>
+
+                        <div className='flex flex-col items-end justify-center xl:items-center'>
+                            <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
+                            <AnimatedNumbers value={8} />+
+                            </span>
+                            <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75
+                            xl:text-center md:text-lg sm:text-base xs:text-sm'>Programming language experience</h2>
                         </div>
                     </div>
                 </div>
