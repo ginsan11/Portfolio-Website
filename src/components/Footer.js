@@ -3,7 +3,10 @@ import Layout from '../components/Layout';
 import Link from 'next/link';
 
 
-
+/**
+ * Footer component represents the footer section of the website.
+ * It displays copyright information and attribution.
+ */
 const Footer = () => {
     return(
         <footer className='w-full border-t-2 border-solid border-dark

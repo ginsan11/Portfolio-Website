@@ -6,7 +6,14 @@ import { useRouter } from 'next/router';
 import { TwitterIcon, GithubIcon, LinkedInIcon, PinterestIcon, DribbbleIcon, SunIcon, MoonIcon } from './Icon';
 import useThemeSwitcher from './hooks/useThemeSwitcher';
 
-// CustomLink component for desktop navigation
+/**
+ * CustomLink component for desktop navigation.
+ * It receives href, title, and className as props.
+ * @param {string} href - The URL to navigate to.
+ * @param {string} title - The title or label for the link.
+ * @param {string} className - Additional CSS classes for the link.
+ * @returns JSX element representing a custom link for desktop navigation.
+ */
 const CustomLink = ({href, title, className=""}) => {
     const router = useRouter();
     return(
@@ -22,7 +29,15 @@ const CustomLink = ({href, title, className=""}) => {
     )
 }
 
-// CustomLinkMobile component for mobile navigation
+/**
+ * CustomLinkMobile component for mobile navigation.
+ * It receives href, title, className, and toggle as props.
+ * @param {string} href - The URL to navigate to.
+ * @param {string} title - The title or label for the link.
+ * @param {string} className - Additional CSS classes for the link.
+ * @param {function} toggle - Function to toggle the mobile navigation.
+ * @returns JSX element representing a custom link for mobile navigation.
+ */
 const CustomLinkMobile = ({href, title, className="", toggle}) => {
     const router = useRouter();
   // Handle click event for navigation item

@@ -3,7 +3,7 @@ import { CircularText} from './Icon';
 import Link from 'next/link';
 
 
-
+// HireMe component represents a button for hiring the user
 export const HireMe = () => {
   return (
     <div className='fixed left-4 bottom-4

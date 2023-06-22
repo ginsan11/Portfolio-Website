@@ -1,8 +1,9 @@
 import React, { useRef } from 'react'
 import { motion, useScroll } from "framer-motion"
 
-
+// LiIcon component represents an animated icon
 const LiIcon = ({reference}) => {
+    // useScroll hook to track scroll progress
     const {scrollYProgress} = useScroll(
         {
             target: reference,

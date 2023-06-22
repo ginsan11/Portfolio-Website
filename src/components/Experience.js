@@ -3,6 +3,17 @@ import { motion, useScroll } from "framer-motion"
 import LiIcon from './LiIcon'
 
 
+/**
+ * Details component represents the details of a specific work experience.
+ * It displays the position, company, time, address, and work details.
+ * @param {string} position - The position/title of the work experience.
+ * @param {string} company - The name of the company for the work experience.
+ * @param {string} companyLink - The URL link to the company's website.
+ * @param {string} time - The duration/timeframe of the work experience.
+ * @param {string} address - The location/address of the work experience.
+ * @param {string} work - The details of the work experience.
+ * @returns JSX element representing the details of a work experience.
+ */
 const Details = ({position, company, companyLink, time, address, work}) => {
     const ref = useRef(null)
     // Split the 'work' string by newline character and map it to an array of <p> elements
@@ -32,6 +43,11 @@ const Details = ({position, company, companyLink, time, address, work}) => {
     </li>)
 }
 
+/**
+ * Experience component represents the experience section of the website.
+ * It displays a list of work experiences.
+ * @returns JSX element representing the experience section.
+ */
 const Experience = () => {
     const ref = useRef(null);
     const {scrollYProgress} = useScroll(

@@ -3,6 +3,15 @@ import { motion, useScroll } from "framer-motion"
 import LiIcon from './LiIcon'
 
 
+/**
+ * Details component represents the details of a specific education experience.
+ * It displays the type, time, place, and additional information.
+ * @param {string} type - The type of education experience (e.g., degree, diploma).
+ * @param {string} time - The duration/timeframe of the education experience.
+ * @param {string} place - The place/institution of the education experience.
+ * @param {string} info - Additional information about the education experience.
+ * @returns JSX element representing the details of an education experience.
+ */
 const Details = ({type, time, place, info}) => {
     const ref = useRef(null)
     return (
@@ -24,6 +33,11 @@ const Details = ({type, time, place, info}) => {
     </li>)
 }
 
+/**
+ * Education component represents the education section of the website.
+ * It displays a list of education experiences.
+ * @returns JSX element representing the education section.
+ */
 const Education = () => {
     const ref = useRef(null);
     const {scrollYProgress} = useScroll(

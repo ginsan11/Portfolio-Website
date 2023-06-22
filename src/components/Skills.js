@@ -1,6 +1,14 @@
 import React from 'react'
 import {motion} from "framer-motion"
 
+/**
+ * Skill component represents an individual skill.
+ * It receives name, x, and y as props.
+ * @param {string} name - The name of the skill.
+ * @param {string} x - The x-coordinate for positioning the skill.
+ * @param {string} y - The y-coordinate for positioning the skill.
+ * @returns JSX element representing an individual skill.
+ */
 const Skill = ({name, x, y}) => {
 
     return(
@@ -18,6 +26,7 @@ const Skill = ({name, x, y}) => {
     )
 }
 
+// Skills component represents the section displaying various skills
 const Skills = () => {
   return (
     <>
@@ -33,6 +42,7 @@ const Skills = () => {
             >
                 Web
             </motion.div>
+            {/* Render individual skill components */}
             <Skill name='CSS' x="-5vw" y="-10vw" />
             <Skill name='HTML' x="-20vw" y="2vw" />
             <Skill name='JavaScript' x="25vw" y="6vw" />

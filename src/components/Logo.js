@@ -2,7 +2,10 @@ import React from 'react'
 import Link from 'next/link'
 import {motion} from "framer-motion";
 
+// MotionLink is a motion-enhanced version of the Link component
 const MotionLink = motion(Link);
+
+// Logo component represents the logo element
 const Logo = () => {
   return (
     <div className='flex items-center justify-center mt-2'>

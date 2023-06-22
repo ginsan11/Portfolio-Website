@@ -30,7 +30,13 @@ const singleWord = {
     }
 }
 
-// AnimatedText component receives text and className as props
+/**
+ * AnimatedText component displays an animated text with specified variants.
+ * It receives text and className as props.
+ * @param {string} text - The text to be displayed.
+ * @param {string} className - Additional CSS class names for styling.
+ * @returns JSX element representing the animated text.
+ */
 const AnimatedText = ({text, className=""}) => {
     return(
         <div className= 'w-full mx-auto py-2 items-center justify-center text-center overflow-hidden sm:py-0'>
