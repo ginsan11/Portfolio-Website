@@ -7,19 +7,6 @@ import { Fullscreen, Slideshow, Video, Zoom } from "yet-another-react-lightbox/p
 
 function ImgSlider(props) {
 
-    const set2 = [
-        { src: "https://i.imgur.com/Nm2dhpw.png"},
-        { src: "https://i.imgur.com/eaCDyhX.png"},
-        { src: "https://i.imgur.com/x4BtQNb.png"},
-        { src: "https://i.imgur.com/qkcYrS8.png"},
-        { src: "https://i.imgur.com/t2lEAuE.png"}
-    ]
-
-    const set1 = [
-        { src: "https://i.imgur.com/fsyrScY.jpg", width: 320, height: 213 },
-        { src: "https://i.imgur.com/fsyrScY.jpg", width: 640, height: 427 }
-    ]
-
 
     return (
       <div className="min-w-[70vw] flex flex-col justify-between items-center z-30 fixed top-1/2 left-1/2  py-32">

@@ -1,7 +1,7 @@
 import React from "react";
 import {motion} from "framer-motion";
 
-
+// Define the animation variants for the quote container
 const quote = {
     initial:{
         opacity:1,
@@ -15,6 +15,7 @@ const quote = {
     }
 }
 
+// Define the animation variants for a single word
 const singleWord = {
     initial:{
         opacity:0,
@@ -29,6 +30,7 @@ const singleWord = {
     }
 }
 
+// AnimatedText component receives text and className as props
 const AnimatedText = ({text, className=""}) => {
     return(
         <div className= 'w-full mx-auto py-2 items-center justify-center text-center overflow-hidden sm:py-0'>

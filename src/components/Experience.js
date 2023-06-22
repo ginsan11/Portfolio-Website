@@ -5,6 +5,7 @@ import LiIcon from './LiIcon'
 
 const Details = ({position, company, companyLink, time, address, work}) => {
     const ref = useRef(null)
+    // Split the 'work' string by newline character and map it to an array of <p> elements
     const splitWork = work.split('\n').map((str, index) => (
         <p key={index} className='font-meidum w-full md:text-sm'>{str}</p>
       ));
