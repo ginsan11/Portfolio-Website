@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 import { TwitterIcon, GithubIcon, LinkedInIcon, PinterestIcon, DribbbleIcon, SunIcon, MoonIcon } from './Icon';
 import useThemeSwitcher from './hooks/useThemeSwitcher';
 
+// CustomLink component for desktop navigation
 const CustomLink = ({href, title, className=""}) => {
     const router = useRouter();
     return(
@@ -21,10 +22,10 @@ const CustomLink = ({href, title, className=""}) => {
     )
 }
 
-
+// CustomLinkMobile component for mobile navigation
 const CustomLinkMobile = ({href, title, className="", toggle}) => {
     const router = useRouter();
-
+  // Handle click event for navigation item
     const handleClick = () => {
         toggle();
         router.push(href)
@@ -46,7 +47,7 @@ const Navbar = () => {
 
     const [mode, setMode] = useThemeSwitcher();
     const [isOpen, setIsOpen] = useState(false)
-
+  // Handle click event for mobile navigation toggle
     const handleClick = () =>{
         setIsOpen(!isOpen)
     }
@@ -56,18 +57,22 @@ const Navbar = () => {
         className='w-full px-32 py-8 font-medium flex items-center justify-between
         dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8'
         >
+                {/* Mobile navigation toggle */}
             <button className='flex-col justify-center items-center hidden lg:flex' onClick={handleClick} >
+                {/* Hamburger icon */}
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5 '}`}></span>
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
             </button>
             <div className='w-full flex justify-between items-center lg:hidden'>
+                {/* Desktop navigation */}
                 <nav>
                     <CustomLink href="/" title="Home" className='mr-4'/>
                     <CustomLink href="/about" title="About" className='mx-4'/>
                     <CustomLink href="/projects" title="Projects" className='mx-4'/>
                 </nav>
                 <nav className='flex items-center justify-center flex-wrap'> 
+                {/* Social media icons */}
                     <motion.a href="https://github.com/ginsan11" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
@@ -82,12 +87,14 @@ const Navbar = () => {
                     >
                         <LinkedInIcon />
                     </motion.a>
+                {/* Theme switch button */}
                 <button
                 onClick={() => setMode(mode === "light" ? "dark" : "light")}
                 className={`ml-3 flex items-center justify-center rounded-full p-1
                 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
                 `}
                 >
+                {/* Toggle between sun and moon icons based on current mode */}
                     {
                         mode === "dark" ? 
                         <SunIcon className={"fill-dark"} />
@@ -98,9 +105,10 @@ const Navbar = () => {
                 
                 </nav>
             </div>
+            {/* Mobile navigation */}
             {
                 isOpen ?
-
+                
                 <motion.div 
                 initial={{scale:0, opacity:0, x: "-50%", y: "-50%"}}
                 animate={{scale:1, opacity:1}}
@@ -112,6 +120,7 @@ const Navbar = () => {
                         <CustomLinkMobile href="/about" title="About" className='' toggle={handleClick}/>
                         <CustomLinkMobile href="/projects" title="Projects" className='' toggle={handleClick}/>
                     </nav>
+                    {/* Social media icons */}
                     <nav className='flex items-center justify-center flex-wrap mt-2'> 
                         <motion.a href="https://twitter.com" target={"_blank"}
                         whileHover={{y:-2}}
@@ -148,12 +157,14 @@ const Navbar = () => {
                         >
                             <DribbbleIcon />
                         </motion.a>
+                        {/* Theme switch button */}
                     <button
                     onClick={() => setMode(mode === "light" ? "dark" : "light")}
                     className={`ml-3 flex items-center justify-center rounded-full p-1
                     ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
                     `}
                     >
+                         {/* Toggle between sun and moon icons based on current mode */}
                         {
                             mode === "dark" ? 
                             <SunIcon className={"fill-dark"} />
