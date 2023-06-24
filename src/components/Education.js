@@ -65,7 +65,7 @@ const Education = () => {
                 Intermediate software engineering.'
                 />
                 <Details 
-                type='Bilangual High School Diploma' 
+                type='Bilingual High School Diploma' 
                 time='2015'
                 place='École canadienne-française PGD Saskatoon'
                 info={'Gruadeted High School with a full set of credits in both english and French language classes .'  } 
