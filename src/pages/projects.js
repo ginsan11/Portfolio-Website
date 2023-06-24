@@ -191,10 +191,10 @@ const projects = () => {
                             <FeaturedProject
                                 title={"Sask Long Covid (Node/React)"}
                                 summary="The Sask Long COVID project spearheaded by Professor/Shareholder Nathaniel Osgood, aimed to provide users access to a medical history of their Long Covid Symtpoms. 
-                                I developed a Postgres SQL backend for handling user login and medical data, implementing security measures against potential attacks like SQL injections. Leveraging TypeScript, the backend facilitated secure login, data formatting, password encryption, and a user registration system. The frontend was built using React and HTML  **code unavailable for confidentiality reasons**"
+                                I developed a Postgres SQL backend for handling user login and medical data, implementing security measures against potential attacks like SQL injections. Leveraging TypeScript, the backend facilitated secure login, data formatting, password encryption, and a user registration system. The frontend was built using React and HTML. Every element of the application has a container setup for its use"
                                 img={project1}
-                                github={"/"}
-                                link=""
+                                github={"https://gitfront.io/r/user-8776012/w7sgf9Rkj7b9/LongCovidApp/"}
+                                link="https://gitfront.io/r/user-8776012/w7sgf9Rkj7b9/LongCovidApp/"
                                 srcset={set1}
                                 type={"Featured Project"}
                             />
