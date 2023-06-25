@@ -8,7 +8,11 @@ import { HireMe } from '@/components/HireMe';
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import Head from 'next/head';
 
+/**
 
+    Home component represents the landing page of the portfolio website.
+    @returns JSX element representing the landing page.
+    */
 export default function Home() {
   return (
     <>
@@ -20,18 +24,22 @@ export default function Home() {
         <Layout className='pt-0 md:pt-16 sm:pt-8'>
           <div className="flex items-center justify-between w-full lg:flex-col"> 
             <div className='w-1/2 m:w-full'>
+              {/* Profile picture */}
               <Image src={profilePic} alt="CodeBucks" className='w-full h-auto lg:hidden md:inline-block md:w-full' 
               priority
               />
             </div>
             <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
+              {/* Animated text */}
               <AnimatedText text="Empowering imagination through the art of code and design" className='!text-6xl !text-left
               xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl'
               />
+               {/* Description */}
               <p className='my-4 text-base font-med md:text-sm sm:text-xs'>As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
 Explore my latest projects and articles, showcasing my expertise in React.js and web development.
               </p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
+                 {/* Resume link */}
                 <Link href='/dummy.pdf' target={"_blank"}
                 className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
                 hover:bg-light hover:text-dark
@@ -41,6 +49,7 @@ Explore my latest projects and articles, showcasing my expertise in React.js and
                 >
                   Resume <LinkArrow className={"w-6 ml-1"}/>
                 </Link>
+                 {/* Contact link */}
                 <Link href='mailto:hervmun@gmail.com' target={"_blank"} className='ml-4 text-lg font-medium
                 capitalize text-dark underline dark:text-light md:text-base'
                 >
@@ -51,6 +60,7 @@ Explore my latest projects and articles, showcasing my expertise in React.js and
             </div>
           </div>    
         </Layout> 
+         {/* HireMe component */}
         <HireMe/>
         <div className='absolute right-8 bottom-8 inline-block w-24'>
           <Image src={lightBulb} alt="Codebucks" className='w-full h-auto md:hidden' />

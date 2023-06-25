@@ -19,6 +19,15 @@ import ImgSlider from '@/components/imgSlider'
 
 const FramerImage = motion(Image);
 
+/**
+ * MovingImg component represents a moving image.
+ * It receives title, img, link, and srcset as props.
+ * @param {string} title - The title of the image.
+ * @param {string} img - The source URL of the image.
+ * @param {string} link - The link URL of the image.
+ * @param {Array} srcset - The array of source URLs for the image.
+ * @returns JSX element representing a moving image.
+ */
 const MovingImg = ({title, img, link, srcset}) => {
 
     const [trigger, setTrigger] = useState(false)
@@ -60,7 +69,16 @@ const MovingImg = ({title, img, link, srcset}) => {
     )
 }
 
-
+/**
+ * Article component represents an individual article.
+ * It receives img, title, date, link, and srcset as props.
+ * @param {string} img - The source URL of the article image.
+ * @param {string} title - The title of the article.
+ * @param {string} date - The date of the article.
+ * @param {string} link - The link URL of the article.
+ * @param {Array} srcset - The array of source URLs for the article image.
+ * @returns JSX element representing an individual article.
+ */
 export const Article = ({img, title, date, link, srcset}) => {
     return (
         <motion.li 
@@ -77,6 +95,16 @@ export const Article = ({img, title, date, link, srcset}) => {
     )
 }
 
+/**
+ * FeaturedArticle component represents a featured article.
+ * It receives img, title, time, summary, and link as props.
+ * @param {string} img - The source URL of the featured article image.
+ * @param {string} title - The title of the featured article.
+ * @param {string} time - The time required to read the featured article.
+ * @param {string} summary - The summary of the featured article.
+ * @param {string} link - The link URL of the featured article.
+ * @returns JSX element representing a featured article.
+ */
 const FeaturedArticle = ({img, title, time, summary, link}) => {
     return(
         <li className='relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl

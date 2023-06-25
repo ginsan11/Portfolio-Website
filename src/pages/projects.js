@@ -15,10 +15,22 @@ import {Article} from './articles'
 import { useState } from 'react'
 import ImgSlider from '@/components/imgSlider'
 
-
+// Import the required components and libraries
 const FramerImage = motion(Image);
 
 
+/**
+ * FeaturedProject component represents a featured project.
+ * It receives type, title, summary, img, link, github, and srcset as props.
+ * @param {string} type - The type of the project.
+ * @param {string} title - The title of the project.
+ * @param {string} summary - The summary of the project.
+ * @param {string} img - The image source of the project.
+ * @param {string} link - The link to the project.
+ * @param {string} github - The link to the project's GitHub repository.
+ * @param {Array} srcset - The array of image sources for the image slider.
+ * @returns JSX element representing a featured project.
+ */
 const FeaturedProject = ({type, title, summary, img, link, github, srcset}) => {
     const [trigger, setTrigger] = useState(false)
 
@@ -108,10 +120,14 @@ const Project = ({type, title, img, link, github}) => {
   }
   
 
-
+/**
+ * projects function represents the Projects page.
+ * It renders a list of featured projects and other digital hobbies/interests.
+ * @returns JSX element representing the Projects page.
+ */
 const projects = () => {
 
-
+    // Set of images for project 1
     const set1 = [
         { src: "https://i.imgur.com/gX3s31m.png", width: 2048, height: 1365 },
         { src: "https://i.imgur.com/3If7lKo.png", width: 2048, height: 1365 },
@@ -120,6 +136,7 @@ const projects = () => {
         { src: "https://i.imgur.com/gkPHScF.png", width: 2048, height: 1365 }
     ]
 
+    // Set of images for project 2
     const set2 = [
         { src: "https://i.imgur.com/Nm2dhpw.png", width: 2048, height: 1365 },
         { src: "https://i.imgur.com/eaCDyhX.png", width: 2048, height: 1365 },
@@ -128,12 +145,14 @@ const projects = () => {
         { src: "https://i.imgur.com/t2lEAuE.png", width: 2048, height: 1365 }
     ]
 
+    // Set of images for project 3
     const set3 = [
         { src: "https://i.imgur.com/q33JRuY.png", width: 2048, height: 1365 },
         { src: "https://i.imgur.com/dWlOXop.png", width: 2048, height: 1365 },
         { src: "https://i.imgur.com/Z5ELseR.png", width: 2048, height: 1365 }
     ]
 
+    // Set of images and video for digital hobby/interest 1
     const set4 = [    {
         type: "video",
         width: 1920,
@@ -150,6 +169,7 @@ const projects = () => {
     { src: "https://i.imgur.com/shaiByA.png", width: 2048, height: 1365 }
 
     ]
+    // Set of videos for digital hobby/interest 2
     const set5 = [    {
         type: "video",
         width: 1920,
